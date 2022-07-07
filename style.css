@@ -14,6 +14,7 @@
 html {
     height: 100%;
     font-family: var(--font-family);
+ 
 }
 
 body {
@@ -23,18 +24,21 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 165px;
-    
+
 }
 
-.rating {
+.rating,
+.thanks-state {
     max-width: 326px;
     width: 100%;
     position: relative;
     border-radius: 1.3rem;
     padding-bottom: 1.6rem;
-    background-color: var(--dark-blue);
-    
+    /* background-color: var(--dark-blue); */
+    background-color: aqua;
+
 }
+
 
 .rating-star {
     height: 1rem;
@@ -46,7 +50,7 @@ body {
     top: 25px;
     left: 20px;
     text-align: center;
-
+    opacity: .2;
 }
 
 .rating>h1 {
@@ -66,7 +70,7 @@ body {
 }
 
 .rating-items {
-   
+
     display: flex;
     list-style: none;
     justify-content: space-between;
@@ -81,13 +85,17 @@ body {
     width: 1rem;
     padding: .8rem;
     background-color: var(--light-grey);
-    color:var(--neutral-white); ;
+    color: var(--neutral-white);
+    ;
     border-radius: 50%;
     text-align: center;
     font-size: 14px;
     margin-top: 1rem;
+    opacity: .2;
+
 }
-.rating > button{
+
+.rating>button {
     margin: 9px 10px 0 25px;
     padding: 14px 113px;
     border-radius: 25px;
@@ -96,7 +104,4 @@ body {
     background-color: var(--primary-orange);
     color: var(--neutral-white);
     border: none;
-}
-.thanks-state {
-    display: none;
 }
