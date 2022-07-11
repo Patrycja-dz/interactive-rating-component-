@@ -14,7 +14,7 @@
 html {
     height: 100%;
     font-family: var(--font-family);
- 
+
 }
 
 body {
@@ -28,17 +28,21 @@ body {
 }
 
 .rating,
-.thanks-state {
+.feedback {
     max-width: 326px;
     width: 100%;
     position: relative;
     border-radius: 1.3rem;
     padding-bottom: 1.6rem;
-    /* background-color: var(--dark-blue); */
-    background-color: aqua;
+    background-color: var(--dark-blue);
+
 
 }
 
+
+.feedback {
+    display: none;
+}
 
 .rating-star {
     height: 1rem;
@@ -50,7 +54,7 @@ body {
     top: 25px;
     left: 20px;
     text-align: center;
-    opacity: .2;
+    opacity: 0.8;
 }
 
 .rating>h1 {
@@ -64,19 +68,16 @@ body {
     margin: 12px 1px 0 12px;
     line-height: 1.3;
     font-size: var(--basic-font-size);
-    /* padding: 0 20px 0 0;  */
     font-weight: var(--normal);
     color: var(--light-grey);
 }
 
 .rating-items {
-
     display: flex;
     list-style: none;
     justify-content: space-between;
     align-items: center;
     padding: 0 1.3rem;
-
 
 }
 
@@ -86,15 +87,16 @@ body {
     padding: .8rem;
     background-color: var(--light-grey);
     color: var(--neutral-white);
-    ;
     border-radius: 50%;
     text-align: center;
     font-size: 14px;
     margin-top: 1rem;
-    opacity: .2;
+    opacity: .8;
 
 }
-
+.rating-item:hover {
+    background-color: var(--medium-grey);
+}
 .rating>button {
     margin: 9px 10px 0 25px;
     padding: 14px 113px;
@@ -104,4 +106,56 @@ body {
     background-color: var(--primary-orange);
     color: var(--neutral-white);
     border: none;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 26px;
+    color: var(--light-grey);
+    opacity: .5;
+}
+
+.feednack-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.feedback-ilustration {
+    margin-top: 15px;
+    height: 95px;
+}
+
+.feedback-summary {
+    width: 165px;
+    height: 30px;
+    background-color: var(--medium-grey);
+    margin: 25px auto 0 auto;
+    padding: 0 5px;
+    border-radius: 20px;
+    color: var(--primary-orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--normal);
+    font-size: 14px;
+    opacity: .9;
+}
+
+.feedback-thank {
+    text-align: center;
+    font-weight: var(--normal);
+    margin: 0 27px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--light-grey);
+}
+
+
+.hidden {
+   display:none
+}
+.visible{
+    display: block;
 }
